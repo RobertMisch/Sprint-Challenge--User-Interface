@@ -150,9 +150,10 @@ footer nav a {
 .navbar{
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 2%;
+    margin: 2% 0;
+    margin-right: 4%;
 }
 .navbar a{
     color: black;
@@ -161,7 +162,7 @@ footer nav a {
 
 .Topimg{
     width: 100%;
-    margin-bottom: 2%;
+    margin: 3% 0;
 }
 /* box hell */
 .box1{
@@ -269,21 +270,41 @@ footer nav a {
 
 /* about page */
 /* page wide stuff */
-.navbar a:hover, footer nav a:hover{
+/* animation */
+.navbar a:hover{
     color:red;
+    animation-name: topnav;
+    animation-duration: 0.5s;
+} 
+footer nav a:hover{
+    color:red;
+    animation-name: bottomnav;
+    animation-duration: 0.5s;
 }
+@keyframes topnav {
+    from {color: black}
+    to {color: red}
+}
+@keyframes bottomnav {
+    from {color:white}
+    to {color: red}
+}
+@keyframes panelnav {
+    from {background-color:white}
+    from{color:red;}
+    to {background-color: red}
+    to{color:white;}
+}
+/* other page wide things */
+
 .section-divider{
     margin: 2% 0;
+    border:1px dashed grey;
 }
-
-/* footer nav a:hover{
-    color:red;
-} */
-
-/* about section */
 
 .about-splash-img{
     width:100%;
+    margin: 4% 0;
 }
 
 .about-section{
@@ -325,6 +346,8 @@ footer nav a {
 .content-panel button:hover{
     color:white;
     background-color: red;
+    animation-name: panelnav;
+    animation-duration: 0.5s;
 }
 
 /* footer work */
