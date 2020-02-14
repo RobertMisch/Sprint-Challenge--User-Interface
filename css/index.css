@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border:1px solid grey;
+	/* border:1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -268,5 +268,68 @@ footer nav a {
 /* end box hell */
 
 /* about page */
+/* page wide stuff */
+.navbar a:hover, footer nav a:hover{
+    color:red;
+}
+.section-divider{
+    margin: 2% 0;
+}
 
+/* footer nav a:hover{
+    color:red;
+} */
 
+/* about section */
+
+.about-splash-img{
+    width:100%;
+}
+
+.about-section{
+    font-weight: bold;
+    margin: 1% 2%;
+}
+
+/* panels */
+
+.container-about-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-panel{
+    display: flex;
+    flex-direction: column;
+    width:47%;
+    margin-bottom: 2%;
+}
+.content-panel *{
+    margin: 2% 0;
+}
+
+.content-panel hr{
+    border-style: dashed;
+    border-color: grey;
+}
+
+.content-panel button{
+    width:50%;
+    background-color: white;
+    padding: 2% 0;
+    border:1px solid black;
+    border-radius: 4px;
+}
+
+.content-panel button:hover{
+    color:white;
+    background-color: red;
+}
+
+/* footer work */
+
+.about-last-section{
+    font-weight: bold;
+    margin: 4% 2%;
+}
