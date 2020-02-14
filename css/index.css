@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border:1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -143,4 +143,216 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* answer work */
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 2% 0;
+    margin-right: 4%;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.Topimg{
+    width: 100%;
+    margin: 3% 0;
+}
+/* box hell */
+.box1{
+    width: 12.5%;
+    height: 100px;
+    background: teal;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2{
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box3{
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box4{
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box5{
+    width: 12.5%;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box6{
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box7{
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box8{
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box9{
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box10{
+    width: 12.5%;
+    height: 100px;
+    background: dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* end box hell */
+
+/* about page */
+/* page wide stuff */
+/* animation */
+.navbar a:hover{
+    color:red;
+    animation-name: topnav;
+    animation-duration: 0.5s;
+} 
+footer nav a:hover{
+    color:red;
+    animation-name: bottomnav;
+    animation-duration: 0.5s;
+}
+@keyframes topnav {
+    from {color: black}
+    to {color: red}
+}
+@keyframes bottomnav {
+    from {color:white}
+    to {color: red}
+}
+@keyframes panelnav {
+    from {background-color:white}
+    from{color:red;}
+    to {background-color: red}
+    to{color:white;}
+}
+/* other page wide things */
+
+.section-divider{
+    margin: 2% 0;
+    border:1px dashed grey;
+}
+
+.about-splash-img{
+    width:100%;
+    margin: 4% 0;
+}
+
+.about-section{
+    font-weight: bold;
+    margin: 1% 2%;
+}
+
+/* panels */
+
+.container-about-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-panel{
+    display: flex;
+    flex-direction: column;
+    width:47%;
+    margin-bottom: 2%;
+}
+.content-panel *{
+    margin: 2% 0;
+}
+
+.content-panel hr{
+    border-style: dashed;
+    border-color: grey;
+}
+
+.content-panel button{
+    width:50%;
+    background-color: white;
+    padding: 2% 0;
+    border:1px solid black;
+    border-radius: 4px;
+}
+
+.content-panel button:hover{
+    color:white;
+    background-color: red;
+    animation-name: panelnav;
+    animation-duration: 0.5s;
+}
+
+/* footer work */
+
+.about-last-section{
+    font-weight: bold;
+    margin: 4% 2%;
 }
